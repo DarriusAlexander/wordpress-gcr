@@ -3,17 +3,17 @@
   "env": {
       "DB_HOST": {
           "description": "(external exposed) IP address of MySQL Database. If you are using Cloud SQL set this to 127.0.0.1",
-          "value": "localhost",
+          "value": ":/cloudsql/fullstacknet:us-central1:wp",
           "required": true
       },
       "DB_USER": {
           "description": "MySQL Database username",
-          "value": "root",
+          "value": "wordpress",
           "required": true
       },
       "DB_PASSWORD": {
           "description": "MySQL Database password",
-          "value": "password",
+          "value": "wordpress",
           "required": true
       },
       "DB_NAME": {
