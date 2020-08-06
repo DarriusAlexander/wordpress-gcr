@@ -29,9 +29,9 @@ RUN curl -o gcs.zip -L "https://downloads.wordpress.org/plugin/gcs.0.1.4.zip" ; 
     unzip gcs.zip -d /usr/src/wordpress/wp-content/plugins/; \
     rm gcs.zip;
     # downloand the Google Cloud Storage plugin for wordpress from wordpress.org	
-RUN curl -o plugins.zip -L "https://storage.googleapis.com/stateless-fullstacknet/plugins.zip" ; \
-    unzip plugins.zip -d /usr/src/wordpress/wp-content/plugins/; \
-    rm plugins.zip;
+#RUN curl -o plugins.zip -L "https://storage.googleapis.com/stateless-fullstacknet/plugins.zip" ; \
+    #unzip plugins.zip -d /usr/src/wordpress/wp-content/plugins/; \
+    #rm plugins.zip;
     
  # COPY locally updated plugins & themes to the new image for redployment to Cloud RUN
  COPY wordpress/wp-content/plugins/  /usr/src/wordpress/wp-content/plugins/
